@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo img {
+    height: 35px;
+}
+
+nav button, .user-options button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000; /* Set button text color to black */
+}
+
+nav a, .user-options a {
+    text-decoration:solid;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 90px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+nav button:hover a, .user-options button:hover a {
+    color: red; /* Change color on hover */
+}

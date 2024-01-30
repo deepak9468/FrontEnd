@@ -1,0 +1,55 @@
+<!-- <form (ngSubmit)="onSubmit()" class="mt-4">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="user.username" class="form-control" required />
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="user.email" class="form-control" required />
+    </div>
+  
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber" class="form-control" required />
+    </div>
+  
+  
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+   -->
+
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-box">
+        <input type="text" id="username" name="username" [(ngModel)]="user.username" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" placeholder="Password" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="user.phoneNumber" placeholder="Contacts" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <button><input width="100px" type="Submit" value="Register Now"></button>
+      </div>
+      <div class="text">
+        <h3>Already have an account? <button onclick=""><a routerLink="/login" >Login now</a></button></h3>
+      </div>
+    </form>
+  </div>
+</body>
